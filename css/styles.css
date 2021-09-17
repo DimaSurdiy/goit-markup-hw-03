@@ -1,0 +1,245 @@
+/* Палитра цветов текста:
+основной цвет текста: #757575
+вторичный цвет текста: #212121
+цвет акцента: #2196F3
+чёрный цвет: #000000
+белый цвет: #ffffff
+белый прозначный цвет: rgba(255, 255, 255, 0.6) */
+
+/* Палитра цветов фона:
+белый фон: #ffffff;
+фон секции герой и футера: #2F303A
+фон секции команда: #F5F4FA */
+
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --white-alpha-color: rgba(255, 255, 255, 0.6);
+
+  --bg-dark-color: #2f303a;
+  --bg-grey-color: #f5f4fa;
+}
+
+body {
+  color: var(--main-text-color);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Шапка сайта */
+.page-header {
+  background-color: var(--white-color);
+}
+
+/* Логотип */
+.logo {
+  color: var(--black-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+/* Навигация сайта */
+.nav-list .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list .current {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.contacts-item {
+  color: inherit;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Секция герой */
+.hero {
+  background-color: var(--bg-dark-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+/* Секция особенности */
+.features-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Секция чем мы занимаемся */
+.about-title,
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Секция наша команда */
+.team {
+  background-color: var(--bg-grey-color);
+}
+
+.team-list .name {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-list .post {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Футер сайта */
+.page-footer {
+  background-color: var(--bg-dark-color);
+}
+
+.footer-logo {
+  color: var(--white-color);
+}
+
+.footer-contacts .map {
+  color: var(--white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-contacts-item {
+  color: var(--white-alpha-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-contacts .map:hover,
+.footer-contacts .map:focus,
+.footer-contacts-item:hover,
+.footer-contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Страница Портфолио */
+.filter-list-btn {
+  color: var(--title-text-color);
+  background-color: var(--bg-grey-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.filter-list-btn:hover,
+.filter-list-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-list .link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
