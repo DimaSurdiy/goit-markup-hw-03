@@ -47,28 +47,36 @@ p {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*-------- Шапка сайта --------*/
 
 .page-header {
-  padding: 24px 0;
   border-bottom: 1px solid #ececec;
 
   background-color: var(--white-color);
 }
 
+.header-items {
+  display: flex;
+}
+
 /*-------- Логотип --------*/
 
 .logo {
+  margin-right: 93px;
+
   color: var(--black-color);
 
   font-family: 'Raleway', sans-serif;
@@ -85,7 +93,24 @@ p {
 
 /*-------- Навигация сайта --------*/
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item + .nav-list-item {
+  margin-left: 50px;
+}
+
 .nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -106,7 +131,19 @@ p {
 
 /*-------- Контакты --------*/
 
-.contacts-item {
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: inherit;
 
   font-weight: 500;
@@ -116,15 +153,16 @@ p {
   text-decoration: none;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
 /*-------- Секция герой --------*/
 
 .hero {
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--bg-dark-color);
 
@@ -170,6 +208,19 @@ p {
 
 /*-------- Секция особенности --------*/
 
+.features-list {
+  display: flex;
+}
+
+.features-list-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.features-list-item:last-child {
+  margin-right: 0;
+}
+
 .features-list .title {
   margin-bottom: 10px;
 
@@ -207,17 +258,37 @@ p {
   text-align: center;
 }
 
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image {
+  display: block;
+}
+
 /*-------- Секция наша команда --------*/
 
 .team {
   background-color: var(--bg-grey-color);
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-card {
   padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+
+  background-color: var(--white-color);
+
+  text-align: center;
 }
 
 .team-list .photo {
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -241,7 +312,8 @@ p {
 /*-------- Футер сайта --------*/
 
 .page-footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--bg-dark-color);
 }

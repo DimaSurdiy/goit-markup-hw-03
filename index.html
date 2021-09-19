@@ -23,27 +23,27 @@
   <body>
     <!-- Шапка страницы -->
     <header class="page-header">
-      <div class="container">
+      <div class="container header-items">
         <nav class="main-nav">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
           <ul class="nav-list">
-            <li>
+            <li class="nav-list-item">
               <a class="link current" href="./index.html">Студия</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li>
-            <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="contacts-item">
+            <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
-            <a class="contacts-item" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="contacts-item">
+            <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -61,25 +61,25 @@
           <!-- Скрытый заголовок h2 -->
           <h2 hidden>Особенности</h2>
           <ul class="features-list">
-            <li>
+            <li class="features-list-item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -93,17 +93,30 @@
         <div class="container">
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-list">
-            <li>
-              <img src="./images/box-1.jpg" alt="Компьютер, на котором пишут код" width="370" />
-            </li>
-            <li>
+            <li class="about-list-item">
               <img
+                class="about-image"
+                src="./images/box-1.jpg"
+                alt="Компьютер, на котором пишут код"
+                width="370"
+              />
+            </li>
+            <li class="about-list-item">
+              <img
+                class="about-image"
                 src="./images/box-2.jpg"
                 alt="Мобильный телефон в руках разработчика сайта"
                 width="370"
               />
             </li>
-            <li><img src="./images/box-3.jpg" alt="Планшет в руках дизайнера" width="370" /></li>
+            <li class="about-list-item">
+              <img
+                class="about-image"
+                src="./images/box-3.jpg"
+                alt="Планшет в руках дизайнера"
+                width="370"
+              />
+            </li>
           </ul>
         </div>
       </section>
