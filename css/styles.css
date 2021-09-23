@@ -363,7 +363,13 @@ p {
 /*-------- Страница Портфолио --------*/
 
 .filter-list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list-btn {
@@ -389,8 +395,14 @@ p {
   background-color: var(--accent-color);
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 .portfolio-list .item {
-  padding-bottom: 20px;
+  margin: 15px;
 }
 
 .portfolio-list .link {
@@ -399,7 +411,15 @@ p {
 }
 
 .portfolio-list .image {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.portfolio-desc {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-list .title {
