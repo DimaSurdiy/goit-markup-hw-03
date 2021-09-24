@@ -45,6 +45,10 @@ p {
   margin: 0;
 }
 
+a {
+  display: block;
+}
+
 .container {
   width: 1200px;
   margin-right: auto;
